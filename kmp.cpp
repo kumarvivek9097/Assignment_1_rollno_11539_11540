@@ -61,7 +61,9 @@ int search (string text, string p, int f[]) {
 	}
 	return flag;
 }
-
+/**
+	KMP algorithm implemented. 
+**/
 char KMP(string text, string p) {
 	char a = 'a';
 	int f[p.length()];
@@ -71,7 +73,9 @@ char KMP(string text, string p) {
 	if (s == 1) a = 'b';
 	return a;
 }
-
+/**
+	Dictionary search basically for finding the probability of the string in the target string.
+**/
 void DictionarySearch(string filename, string partialMatchTable) {
 	ifstream object1;
 	object1.open(filename.c_str());
@@ -111,7 +115,9 @@ void DictionarySearch(string filename, string partialMatchTable) {
 	cout << "The probability of finding " << partialMatchTable << " is " << word_match_count / word_count << endl;
 	cout << endl;
 }
-
+/**
+	For counting the number of paragraph.
+**/
 void para_count(string filename) {
 	ifstream myfile;
 	int count = 1;
@@ -129,7 +135,9 @@ void para_count(string filename) {
 	cout << endl;
 	myfile.close();
 }
-
+/**
+	Main function for the execution of the program.
+**/
 int main() {
 	int choice;
 	char n = '\0';
