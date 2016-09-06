@@ -168,6 +168,7 @@ int main() {
 		}
 		default:
 			cout << "Enter a valid choice!" << endl;
+			break;
 		}
 		cout << "Do you want to continue? y or n -> ";
 		cin >> n;
